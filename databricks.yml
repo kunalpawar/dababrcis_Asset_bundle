@@ -1,0 +1,18 @@
+bundle:
+  name: dabdemo
+
+include:
+  - resources/Jobs/*.yml
+  #reosurce should be here
+
+permissions:
+  - group_name: de-grp
+    level: CAN_MANAGE
+
+
+targets:
+  dev:
+    mode: development
+    default: true
+    worspace:
+      host: https://dbc-707ad082-e7d7.cloud.databricks.com/

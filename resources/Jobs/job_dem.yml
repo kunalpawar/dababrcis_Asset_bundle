@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    newrepojob:
+      name: dabjob
+      run_as:
+      tasks:
+        - task_key: dbtest
+          notebook_task:
+            notebook_path: /Workspace/Repos/kunalpawar828@gmail.com/dababrcis_Asset_bundle/Notebooks/dab_notebook.py
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
